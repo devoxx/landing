@@ -1,2 +1,1 @@
-
-TODO  Add steps to get this 'landing' site deployed to Devoxx.com
+Deployment happens when somthing has changed every hour via a crontab schedule on EC2.
