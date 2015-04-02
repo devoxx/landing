@@ -574,14 +574,16 @@ footer .sponsors a {
 	background: #000;
 }
 #splash {
-	background: url(../images/splash_bg3.jpg) no-repeat center top;
-	min-height: 630px;
-	padding: 150px 0 0 0;
+	background: url(../images/splash_bg4.jpg) no-repeat top;
+	 background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top top;
+	padding: 10px 0 0 0;
 	text-align: center;
 }
 #splash h1 {
 	color: #fff;
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 }
 #splash .btn {
 	background: none;
@@ -607,14 +609,18 @@ footer .sponsors a {
 	border-radius: 24px;
 	white-space: nowrap;
 }
-#splash .kids {
-	margin-top: 50px;
+#splash .uk {
+	margin-left: 30px;
 }
 #splash .brussels {
-	margin-top: 80px;
+	margin-top: 40px;
 }
 #splash .paris {
 	margin-top: -20px;
+}
+#splash .casablanca {
+	margin-top: -10px;
+	margin-bottom: 100px;
 }
 
 #splash .btn .popup {
@@ -981,7 +987,7 @@ footer .sponsors a {
 	width: 100%;
 }
 .pin {
-	max-width: 159px;
+	max-width: 140px;
 }
 
 #googlemap {
@@ -1212,15 +1218,22 @@ footer .sponsors a {
 		margin: 0;
 	}
 	
-	
+	#splash {
+	background: url(../images/splash_bg4.jpg) no-repeat center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; 
+    background-size: cover; 
+	text-align: center;
+
+}
 	
 		
 	#splash h1,
 	#splash .btn {
 		margin: 0;
 	}
-	#splash .paris {
-		margin-bottom: 30px;
+	#splash .casablanca {
+		margin-bottom: 0px;
 	}
 	
 	#carousel ul li .content {

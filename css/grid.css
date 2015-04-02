@@ -2,8 +2,9 @@
 /* Main container for all */
 
 .grid {
-	max-width: 1300px;
-	margin-left: 70px;
+    margin: 0 auto;
+	max-width: 900px;
+	padding: 0 30px
 }
 
 .row {
