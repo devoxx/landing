@@ -1,1 +1,1 @@
-Deployment happens when somthing has changed every hour via a crontab schedule on EC2.
+For the moment this is a manual FTP deploy to a AWS EC2 instance.
