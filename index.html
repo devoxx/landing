@@ -3,201 +3,244 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>DEVOXX</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-		
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/grid.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/meanmenu.css">
-		<link rel="stylesheet" href="css/uniform.css">
+<head>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<!-- this is nesessary for the floating action button-->
-		<link rel="stylesheet" href="css/kc.fab.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<script src="js/vendor/jquery.min.js"></script>
-		<script src="js/vendor/kc.fab.js"></script>
+    <title>DEVOXX</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		<!-- For SEO -->
+    <meta name="description" content="The annual Devoxx conference  by developers for developers.">
+    <meta name="keywords" content="devoxx, java community, conference">
+		<!-- Mobile apps banner-->
+		<meta name="apple-itunes-app" content="app-id=1094805620">
+		<meta name="google-play-app" content="app-id=com.devoxx">
+		<meta name="msApplication-ID" content="App" />
+		<meta name="msApplication-PackageFamilyName" content="44139JulianRonge.MyDevoxx_rx6wdj1sqvqf8" />
+		<meta name="msApplication-PackageEdgeName" content="9NBLGGH4QXR5" />
+		<meta name="msapplication-TileImage" content="//store-images.s-microsoft.com/image/apps.40984.13510798887397680.d8f77f7b-9f5c-479c-b44a-8c1c54ac284a.a088fdff-0ff2-4d4e-ad3d-acf98509f531?w=100&h=100&q=60" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
-		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	</head>
-	
-	<body class="splash">
-		<!--[if lt IE 7]>
-		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-		<![endif]-->
-		
-		
-		<header>
-			<div class="grid">			
-				<div class="row">			
-					<div class="col6">						
-						<img src="images/devoxx_logo.gif">						
-					</div>			
-					<nav class="col14" style="height: 40px">
-						
-					</nav>	
-				
-				</div>
-				
-			</div>
-		</header>
-		
-		<div class="menuSpacer"></div>				
-		
-		<div id="splash" class="area orange">
-			<div class="grid">
-			
-				<div class="row">	
-					<div class="col20">						
-						<h1>make your choice</h1>						
-					</div>	
-				</div>
-				
-				<div class="row">
+		<!-- StyleSheets -->
+	  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery.smartbanner.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/kc.fab.css">
 
-				<div class="col4 push5">
+</head>
+<body class="" style="background-size: cover;">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-							
-						<a href="http://www.devoxx.co.uk" class="btn uk">
-							<img src="images/splash_btn_uk.png" class="pin" alt="" />
-							<h4>United Kingdom</h4>
-							<div class="date">8 - 10/6 '16</div>
-						</a>
-						
-					</div>
+	<div id="">
 
-					
-					<div class="col4">
-					
-						<a href="https://www.devoxx.be" class="btn brussels">
-							<img src="images/splash_btn_brussels.png" class="pin" alt="" />
-							<h4>Belgium</h4>
-							<div class="date">7 - 11/11 '16</div>
-						</a>
-						
+		<div id="loader-wrapper">
+			<div id="loader"></div>
 
-					</div>	
-					
-					<div class="col4 push2">
-							
-						<a href="http://www.devoxx.pl" class="btn krakow">
-							<img src="images/splash_btn_krakow.png" class="pin" alt="" />
-							<h4>Poland</h4>
-							<div class="date">22 - 24/6 '16</div>
-						</a>
-						
-					</div>
-							
+			<p id="country"></p>
 
-				</div>
-				
-				<div class="row">
-				</div>
-				
-				<div class="row">
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
 
-					<div class="col4 push6">				
-
-						
-						<a href="https://www.devoxx.fr" class="btn paris">
-							<img src="images/splash_btn_paris.png" class="pin" alt="" />
-							<h4>France</h4>
-							<div class="date">20 - 22/4 '16</div>
-						</a>
-						
-					</div>
-					<div class="col4 push4">
-						
-						<div class="btn kids">
-							<a href="http://www.devoxx4kids.org"><img src="images/splash_btn_kids.png" class="pin" alt="" /></a>
-							<h4>DEVOXX 4 KIDS</h4>
-							
-						</div>
-
-					</div>
-				</div>
-				<div class="row">
-					<div class="col4 push3">				
-						
-						<a href="http://www.devoxx.ma" class="btn casablanca">
-							<img src="images/splash_btn_ma.png" class="pin" alt="" />
-							<h4>Morocco</h4>
-							<div class="date">2016 TBA</div>
-						</a>
-						
-					</div>
-				
-				</div>
-				<div class="kc_fab_wrapper" ></div>
-			</div>
 		</div>
-		
-		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-		<!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
-		<!-- <script src="js/vendor/jquery.uniform.min.js"></script> -->
-		<!-- <script src="js/vendor/jquery.bxslider.min.js"></script> -->
-		<!-- <script src="js/vendor/jquery.meanmenu.2.0.min.js"></script> -->
-		<!-- <script src="js/main.js"></script> -->
-		
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script>
-			var _gaq=[['_setAccount','UA-41435900-1'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-			g.src='//www.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g,s)}(document,'script'));
-		</script>
 
-		<script>
-            $(document).ready(function(){
-                var links = [
-                    {
-                        "bgcolor":"#56b9bf",
-                        "icon":"<i class='fa fa-info'></i>"
-                    },
-                    {
-                        "url":"https://www.youtube.com/c/devoxx2015",
-                        "bgcolor":"#e52d27",
-                        "color":"#ffffff",
-                        "icon":"<i class='fa fa-youtube'></i>",
-                        "target":"_blank",
-                        "title" : "Visit our YouTube channel"
+		<div id="">
 
-                    },
-                    {
-                        "url":"https://en.wikipedia.org/wiki/Devoxx",
-                        "bgcolor":"#1E90FF",
-                        "color":"#ffffff",
-                        "icon":"<i class='fa fa-wikipedia-w'></i>",
-                        "target":"_blank",
-                        "title" : "Read more about Devoxx"
+<!-- PAGE -->
+<div id="page"  >
 
-                    },
-                    {
-                        "url":"https://www.voxxed.com/",
-                        "bgcolor":"#50ceed",
-                        "color":"#ffffff",
-                        "icon":"<i class='fa fa-superscript'></i>",
-                        "target":"_blank",
-                        "title" : "Visit Voxxed.com"
+    <!-- HOME SECTION -->
 
-                    }
-                    ,
-                    {
-                        "url":"https://voxxeddays.com",
-                        "bgcolor":"#3b5998",
-                        "color":"#ffffff",
-                        "icon":"<i class='fa fa-rocket'></i>",
-                        "target":"_blank",
-                        "title" : "Find a Voxxed Day event"
+    <section id="home" class="home">
+        <div class="table-cell">
+            <div class="container">
 
-                    }
-                ]
-                $('.kc_fab_wrapper').kc_fab(links);
-            })
-        </script>
-	</body>
+                <!-- logo -->
+                <a href="#">
+                    <img class="logo wow fadeInUp" id="logo_be"  data-wow-duration="7s" src="" alt="Devoxx Belgium" title="Devoxx Belgium" name="logo_be[]">
+                    <img class="logo wow fadeInUp" id="logo_ma" data-wow-duration="7s"  src="" alt="Devoxx Morocco" title="Devoxx Morocco" style="display:none"  name="logo_ma[]">
+                    <img class="logo wow fadeInUp" id="logo_fr" data-wow-duration="7s"  src="" alt="Devoxx France" title="Devoxx France" style="display:none" name="logo_fr[]">
+                    <img class="logo wow fadeInUp" id="logo_uk" data-wow-duration="7s"  src="" alt="Devoxx United Kingdom" title="Devoxx United Kingdom" style="display:none" name="logo_uk[]">
+                    <img class="logo wow fadeInUp" id="logo_pl" data-wow-duration="7s"  src="" alt="Devoxx Poland" title="Devoxx Poland" style="display:none"  name="logo_pl[]">
+                    <img class="logo wow fadeInUp" id="logo_us" data-wow-duration="7s"  src="" alt="Devoxx USA" title="Devoxx USA" style="display:none"  name="logo_us[]">
+                </a>
+<h3>Choose your Devoxx</h3>
+                <!-- first headline -->
+                <div class="wrapper wow fadeInUp">
+
+                    <div class="menu" >
+                      <div class="circle" id="c1">
+                        <ul>
+                          <li class="one"><img src=""  id="img_be" class="img_be" title="Devoxx Belgium"></li>
+                          <li class="two"><img src=""  id="img_ma" class="img_ma" title="Devoxx Morocco"></li>
+                          <li class="three"><img src="" id="img_fr" class="img_fr" title="Devoxx France"></li>
+                          <li class="four"><img src="" id="img_uk"  class="img_uk" title="Devoxx UK"></li>
+                          <li class="five"><img src="" id="img_pl"  class="img_pl" title="Devoxx Poland"></li>
+                          <li class="six"><img src="" id="img_us"  class="img_us" title="Devoxx USA"></li>
+                        </ul>
+                      </div>
+
+                      <div class="circle" id="c2" style="transform: rotate(-60deg);display:none">
+                        <ul>
+                          <li class="one"><img src="" id="img_be" class="img_be" title="Devoxx Belgium"></li>
+                          <li class="two"><img src="" id="img_ma"  class="img_ma" title="Devoxx Morocco"></li>
+                          <li class="three"><img src="" id="img_fr" class="img_fr" title="Devoxx France"></li>
+                          <li class="four"><img src="" id="img_uk" class="img_uk" title="Devoxx UK"></li>
+                          <li class="five"><img src="" id="img_pl" class="img_pl" title="Devoxx Poland"></li>
+                          <li class="six"><img src="" id="img_us"  class="img_us" title="Devoxx USA"></li>
+                        </ul>
+                      </div>
+
+                      <div class="circle" id="c3" style="transform: rotate(-120deg);display:none">
+                        <ul>
+                          <li class="one"><img src="" id="img_be" class="img_be" title="Devoxx Belgium"></li>
+                          <li class="two"><img src="" id="img_ma"  class="img_ma" title="Devoxx Morocco"></li>
+                          <li class="three"><img src="" id="img_fr" class="img_fr" title="Devoxx France"></li>
+                          <li class="four"><img src="" id="img_uk" class="img_uk" title="Devoxx UK"></li>
+                          <li class="five"><img src="" id="img_pl" class="img_pl" title="Devoxx Poland"></li>
+                          <li class="six"><img src="" id="img_us"  class="img_us" title="Devoxx USA"></li>
+                      </div>
+
+                      <div class="circle" id="c4" style="transform: rotate(-180deg);display:none">
+                        <ul>
+                          <li class="one"><img src="" id="img_be" class="img_be" title="Devoxx Belgium"></li>
+                          <li class="two"><img src="" id="img_ma" class="img_ma" title="Devoxx Morocco"></li>
+                          <li class="three"><img src="" id="img_fr" class="img_fr" title="Devoxx France"></li>
+                          <li class="four"><img src="" id="img_uk" class="img_uk" title="Devoxx UK"></li>
+                          <li class="five"><img src="" id="img_pl" class="img_pl" title="Devoxx Poland"></li>
+                          <li class="six"><img src="" id="img_us"  class="img_us" title="Devoxx USA"></li>
+                        </ul>
+                      </div>
+
+                      <div class="circle" id="c5" style="transform: rotate(-240deg);display:none">
+                        <ul>
+                          <li class="one"><img src="" id="img_be" class="img_be" title="Devoxx Belgium"></li>
+                          <li class="two"><img src="" id="img_ma" class="img_ma" title="Devoxx Morocco"></li>
+                          <li class="three"><img src="" id="img_fr" class="img_fr" title="Devoxx France"></li>
+                          <li class="four"><img src="" id="img_uk" class="img_uk" title="Devoxx UK"></li>
+                          <li class="five"><img src="" id="img_pl" class="img_pl" title="Devoxx Poland"></li>
+                          <li class="six"><img src="" id="img_us"  class="img_us" title="Devoxx USA"></li>
+                        </ul>
+                      </div>
+
+                      <div class="circle" id="c6" style="transform: rotate(-300deg);display:none">
+                        <ul>
+                          <li class="one"><img src="" id="img_be" class="img_be" title="Devoxx Belgium"></li>
+                          <li class="two"><img src="" id="img_ma" class="img_ma" title="Devoxx Morocco"></li>
+                          <li class="three"><img src="" id="img_fr" class="img_fr" title="Devoxx France"></li>
+                          <li class="four"><img src="" id="img_uk" class="img_uk" title="Devoxx UK"></li>
+                          <li class="five"><img src="" id="img_pl" class="img_pl" title="Devoxx Poland"></li>
+                          <li class="six"><img src="" id="img_us"  class="img_us" title="Devoxx USA"></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                  <br/>
+                <!-- animated headline -->
+                <h3 class="cd-headline loading-bar wow fadeInUp" data-wow-duration="7s" style="font-family: myFirstFont;font-size: 14px;" name="logo_be[]">
+                    <br/><span id="desc_be"></span><br/>
+                    <span id="place_be"></span><br/><br/>
+                    <br/>
+                    <a href="" id="link_be" target="_blank" class="btn btn-default button-yellow">GO</a>
+                </h3>
+
+                <h3 class="cd-headline loading-bar wow fadeInUp" data-wow-duration="7s" style="font-family: myFirstFont;font-size: 14px;display:none" name="logo_ma[]" >
+                    <br/><span id="desc_ma"></span><br/>
+                    <span id="place_ma"></span><br/><br/>
+                    <br/>
+                    <a href=""  id="link_ma" target="_blank" class="btn btn-default button-yellow">GO</a>
+                </h3>
+
+                <h3 class="cd-headline loading-bar wow fadeInUp" data-wow-duration="7s" style="font-family: myFirstFont;font-size: 14px;display:none" name="logo_fr[]" >
+                    <br/><span id="desc_fr"></span><br/>
+                    <span id="place_fr"></span><br/><br/>
+                    <br/>
+                    <a href="" id="link_fr" target="_blank" class="btn btn-default button-yellow">GO</a>
+                </h3>
+
+                <h3 class="cd-headline loading-bar wow fadeInUp" data-wow-duration="7s" style="font-family: myFirstFont;font-size: 14px;display:none" name="logo_uk[]" >
+                    <br/><span id="desc_uk"></span><br/>
+                    <span id="place_uk"></span><br/><br/>
+                    <br/>
+                    <a href="" id="link_uk"  target="_blank" class="btn btn-default button-yellow">GO</a>
+                </h3>
+
+                <h3 class="cd-headline loading-bar wow fadeInUp" data-wow-duration="7s" style="font-family: myFirstFont;font-size: 14px;display:none" name="logo_pl[]" >
+                    <br/><span id="desc_pl"></span><br/>
+                    <span id="place_pl"></span><br/><br/>
+                    <br/>
+                    <a href="" id="link_pl" target="_blank" class="btn btn-default button-yellow">GO</a>
+                </h3>
+
+                <h3 class="cd-headline loading-bar wow fadeInUp" data-wow-duration="7s" style="font-family: myFirstFont;font-size: 14px;display:none" name="logo_us[]" >
+                    <br/><span id="desc_us"></span><br/>
+                    <span id="place_us"></span><br/><br/>
+                    <br/>
+                    <a href="" id="link_us" target="_blank" class="btn btn-default button-yellow">GO</a>
+                </h3>
+
+                <!-- countdown -->
+                <ul class="countdown wow fadeInUp" data-wow-duration="7s">
+                    <li>
+                        <button class="btn btn-default" id="b12">1</button>
+                        <button class="btn btn-default" id="b13">1</button>
+                        <button class="btn btn-default" id="b14">0</button>
+                        <p class="">Days</p>
+                    </li>
+
+                    <li>
+                        <button class="btn btn-default" id="b22">2</button>
+                        <button class="btn btn-default" id="b23">1</button>
+                        <button class="btn btn-default" id="b24">7</button>
+                        <p class="">talks</p>
+                    </li>
+
+                    <li>
+                        <button class="btn btn-default" id="b31">0</button>
+                        <button class="btn btn-default" id="b32">3</button>
+                        <button class="btn btn-default" id="b33">7</button>
+                        <button class="btn btn-default" id="b34">0</button>
+                        <p class="">Capacity</p>
+                    </li>
+
+                </ul>
+<!-- Info button-->
+<div class="kc_fab_wrapper" ></div>
+            </div><!-- /.container -->
+        </div><!-- /.table-cell -->
+    </section><!-- /#home -->
+</div><!-- /#page -->
+
+
+<div id="body-bg"></div>
+		</div>
+
+	</div>
+	<!-- Scripts -->
+<script src="./js/modernizr-2.6.2.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/kc.fab.js"></script>
+<script src="./js/info.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/jquery.backstretch.js"></script>
+<script src="./js/jquery.validate.js"></script> <!-- Form Validation -->
+<script src="./js/TweenLite.js"></script>
+<!--<script src="./js/canvas.js"></script> -->
+<script type="text/javascript" src="https://l2.io/ip.js?var=myip"></script>
+<script src="./js/position.js"></script>
+<script src="./js/jquery.smartbanner.js"></script>
+    <script type="text/javascript">
+      $(function() { $.smartbanner({
+  title: 'My Devoxx',
+  author: 'Devoxx'
+})} )
+    </script>
+
+</body>
 </html>
